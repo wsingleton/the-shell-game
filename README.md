@@ -11,28 +11,19 @@ Players should be aware of simple Unix concepts (i.e. directory structures, rela
 
 You should create a IAM user that has programmatic access to AWS (through the CLI). Make note of the Access Key and Secret Access Key provided to you when the user is created, you will need to these to configure the AWS CLI within the EC2 instance. You should attach the following custom policies to your newly created user:
 
-`create-key-pair-policy`:
+`tsg-key-pair-policy`:
 ```
 {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "VisualEditor0",
+            "Sid": "createKey",
             "Effect": "Allow",
             "Action": "ec2:CreateKeyPair",
             "Resource": "arn:aws:ec2:*:<AWS_ACCOUNT_NUMBER>:key-pair/*"
-        }
-    ]
-}
-```
-
-`delete-key-pair-policy`:
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
+        },
         {
-            "Sid": "VisualEditor0",
+            "Sid": "deleteKey",
             "Effect": "Allow",
             "Action": "ec2:DeleteKeyPair",
             "Resource": "arn:aws:ec2:*:<AWS_ACCOUNT_NUMBER>:key-pair/*"
@@ -41,6 +32,7 @@ You should create a IAM user that has programmatic access to AWS (through the CL
 }
 ```
 
+Be sure to put your AWS account number where the placeholder is in the policy JSON!
 
 Once complete, allocate an AWS EC2 t2.micro instance and store the provided pem file in a safe place. Connect using `ssh` to the instance and configure the AWS CLI using the `aws configure` command, use the access keys obtained from earlier. This will allow you to run key generation/deletion commands from your EC2 instance.
 
