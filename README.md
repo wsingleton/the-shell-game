@@ -49,7 +49,6 @@ Then, use `scp` to move the `tsg-setup.tar.gz` file from your local machine to t
 - `set-user-nproc-limit.sh`: Used to edit the `/etc/security/limit.conf` file and puts a cap on the number of processes that are allowed by player accounts
 - `preconfigured.bashrc`: Will become the `.bashrc` used in TSG; wraps up several common commands to provide a text-based adventure feel, as well as preventing the player from running certain commands
 - `reset.sh`: Used to reset the progress of a current instance of TSG (if players use `sudo` it will trigger a reset of all their progress)
-- `the-shell-game.tar.gz`: The primary tarball that contains TSG, it is used when running the `create-user.sh` script; you do not need to unpack this file yourself
 - `tsg-setup.tar.gz` (if not removed after unpacking, optional to keep)
 - `keys/`: Directory used for storing keys of generated users
 
