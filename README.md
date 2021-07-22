@@ -20,7 +20,7 @@ You should create a IAM user that has programmatic access to AWS (through the CL
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": "ec2:CreateKeyPair",
-            "Resource": "arn:aws:ec2:*:011217676466:key-pair/*"
+            "Resource": "arn:aws:ec2:*:<AWS_ACCOUNT_NUMBER>:key-pair/*"
         }
     ]
 }
@@ -35,7 +35,7 @@ You should create a IAM user that has programmatic access to AWS (through the CL
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": "ec2:DeleteKeyPair",
-            "Resource": "arn:aws:ec2:*:011217676466:key-pair/*"
+            "Resource": "arn:aws:ec2:*:<AWS_ACCOUNT_NUMBER>:key-pair/*"
         }
     ]
 }
