@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pemFile=$1
-newUsername=$2
+newUsername=$1
+pemFile=$2
 connectionStr=$3
 
 generateKeyPair="aws ec2 create-key-pair --key-name $newUsername --query 'KeyMaterial' --output text >> ~/keys/$newUsername.pem"

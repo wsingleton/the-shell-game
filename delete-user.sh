@@ -1,8 +1,8 @@
 #!/bin/bash
 
 userToDelete=$1
-pemFile=./keys/the-shell-game.pem
-connectionStr=$2
+pemFile=$2
+connectionStr=$3
 
 deleteKeyPair="aws ec2 delete-key-pair --key-name $userToDelete"
 removeStoredKey="sudo rm ~/keys/$userToDelete.pem"
