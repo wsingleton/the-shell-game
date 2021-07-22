@@ -1,8 +1,8 @@
 #!/bin/bash
 
-newUsername=$1
-pemFile=./keys/the-shell-game.pem
-connectionStr=$2
+pemFile=$1
+newUsername=$2
+connectionStr=$3
 
 generateKeyPair="aws ec2 create-key-pair --key-name $newUsername --query 'KeyMaterial' --output text >> ~/keys/$newUsername.pem"
 setKeyPermissions="sudo chmod 600 ~/keys/$newUsername.pem"
