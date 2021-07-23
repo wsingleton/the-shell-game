@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# This script is intended to run on the EC2 instance allocated for TSG
 pemFile=$1
 connectionStr=$2
 
