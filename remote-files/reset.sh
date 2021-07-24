@@ -11,4 +11,5 @@ chmod +xr -R ~/the-shell-game/
 rm -Rf ~/the-shell-game/
 tar -xzf ~/.tsg/the-shell-game.tar.gz -C ~
 echo -e "\nReset complete\n"
+cd ~
 
