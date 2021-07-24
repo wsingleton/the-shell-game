@@ -11,7 +11,7 @@ Players should be aware of simple Unix concepts (i.e. directory structures, rela
 
 You should create a IAM user that has programmatic access to AWS (through the CLI). Make note of the Access Key and Secret Access Key provided to you when the user is created, you will need to these to configure the AWS CLI within the EC2 instance. You should attach the following custom policies to your newly created user:
 
-`tsg-key-pair-policy`:
+`tsg-policy`:
 ```
 {
     "Version": "2012-10-17",
