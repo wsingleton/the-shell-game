@@ -1,6 +1,6 @@
 #!/bin/bash
 
-unpackedDir=./tmp/jdk8u292-b10
+unpackedDir=./tmp/unpacked
 
 if [ -d "$unpackedDir" ]; then
 	echo -e "\nTask complete!\n"
