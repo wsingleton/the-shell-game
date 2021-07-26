@@ -1,0 +1,3 @@
+
+Create a new room within this one, name it "closet", and create a new item called "book.txt" it (bonus: do it in one line)
+

@@ -1,0 +1,3 @@
+
+Move the "boulder.data" file from this directory to the subdirectory named "bin".
+

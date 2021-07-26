@@ -1,0 +1,3 @@
+
+There is a large tome of cryptic writing in this room, within it you can find a secret key. The key will be the last word in the only line within this tome that contains the word "secret". Provide this key as an argument when you run verify.sh.
+

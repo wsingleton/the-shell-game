@@ -1,0 +1,5 @@
+
+Grab the tarball from the following link and place it in this directory.
+
+https://innov8dev-resources.s3.amazonaws.com/openjdk-8.tar.gz
+
