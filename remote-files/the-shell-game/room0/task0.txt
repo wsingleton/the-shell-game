@@ -1,0 +1,5 @@
+
+Create a new file in this room called "task0-file.txt" (without the quotes). 
+
+Run "sh verify.sh" (again, without the quotes) once you have completed this task.
+
