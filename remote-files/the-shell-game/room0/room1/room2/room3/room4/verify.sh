@@ -10,8 +10,7 @@ for i in 1 2 3 4 5
 do
 	if [ -d "./virus$i" -o -f "$virusRoot" ]; then
 		echo -e "\nYou have not completed the task.\n"
-			mv $room5 ./room5
-	       	chmod -xr $room5
+       	chmod -xr $room5
 		exit 1       
 	fi	
 done
