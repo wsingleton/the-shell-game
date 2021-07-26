@@ -8,7 +8,7 @@ fi
 
 for i in 1 2 3 4 5
 do
-	if [ -d "./virus$i" -o -f "$virusRoot" ]; then
+	if [ -d "./virus$i" -o -f ".virus.sh" ]; then
 		echo -e "\nYou have not completed the task.\n"
        	chmod -xr $room5
 		exit 1       
