@@ -119,7 +119,7 @@ function dir() {
 function touch() {
 	echo -e "\nYou begin casting the spell: Create Item\n"
 	
-	if [[ $1 == *"verify.sh"*]; then
+	if [[ $1 == *"verify.sh"* ]]; then
 		failure spell
 	fi
 	
