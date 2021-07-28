@@ -24,7 +24,7 @@ You should create a IAM user that has programmatic access to AWS (through the CL
                 "ec2:DeleteKeyPair"
             ],
             "Resource": [
-                "arn:aws:ec2:*:011217676466:key-pair/*"
+                "arn:aws:ec2:*:<AWS Account ID>:key-pair/*"
             ]
         },
         {
