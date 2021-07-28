@@ -47,7 +47,7 @@ Be sure to put your own AWS account number where the placeholder is in the polic
 
 Once complete, allocate an AWS EC2 t2.micro instance and store the provided pem file in a safe place. Connect using `ssh` to the instance and configure the AWS CLI using the `aws configure` command, use the access keys obtained from earlier. This will allow you to run key generation/deletion commands from your EC2 instance.
 
-Run the `tsg-setup.sh` script, providing you private key file and the instance connection string (e.g. `ec2-user@<EC2-IP>`). This script will use `ssh` t connect to your EC2 instance and copy a tarball from the hosted TSG S3 bucket. This tarball will be unpacked, leaving the following items in the home directory of your EC2 instance:
+Run the `tsg-setup.sh` script, providing you private key file and the instance connection string (e.g. `ec2-user@<EC2-IP>`). This script will use `ssh` to connect to your EC2 instance and copy a tarball from the hosted TSG S3 bucket. This tarball will be unpacked, leaving the following items in the home directory of your EC2 instance:
 
 
 - `keys/`: Directory used for storing keys of generated users
