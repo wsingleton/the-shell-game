@@ -35,8 +35,8 @@ You should create a IAM user that has programmatic access to AWS (through the CL
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::/the-shell-game",
-                "arn:aws:s3:::/the-shell-game/*"
+                "arn:aws:s3:::the-shell-game",
+                "arn:aws:s3:::the-shell-game/*"
             ]
         }
     ]
